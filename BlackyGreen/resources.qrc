@@ -1,8 +1,11 @@
 <RCC>
-    <qresource prefix="/BlackyGreen">
-        <file>toolbox.qss</file>
-        <file>tabwidget.qss</file>
-        <file>docstyles.css</file>
+    <qresource prefix="/">
         <file>common.qss</file>
+        <file>buttons.qss</file>
+        <file>editors.qss</file>
+        <file>area.qss</file>
+        <file>views.qss</file>
+        <file>menus.qss</file>
+        <file>docstyles.css</file>
     </qresource>
 </RCC>
