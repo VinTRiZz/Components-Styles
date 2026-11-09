@@ -42,12 +42,13 @@ QComboBox::drop-down:hover {
 }
 
 QComboBox QAbstractItemView {
-    background-color: #1a1a1a;
-    color: #d0d0d0;
-    border: 1px solid #1f4f4d;
+    background-color: #151515;
+    alternate-background-color: #191919;
+    color: #c0c0c0;
+    border: 2px solid #1f4f4d;
     border-radius: 4px;
     outline: 0;
-    selection-background-color: #0f1f1d;
+    selection-background-color: #ddf0a8;
     selection-color: #e0e0e0;
 }
 
@@ -75,7 +76,6 @@ QTabWidget::pane {
     border-radius: 0 0 4px 4px;
     background-color: #1a1a1a;
     padding: 5px;
-    margin-top: -1px;
 }
 
 QTabBar {
@@ -85,7 +85,6 @@ QTabBar {
 }
 
 QTabBar::close-button {
-    image: url(:/images/icons/common/close_tab.svg);
     background: transparent;
     subcontrol-position: right;
     margin: 3px;
@@ -96,13 +95,22 @@ QTabBar::close-button:hover {
     border-radius: 3px;
 }
 
+QTabBar::tab {
+    background-color: #2d2d2d;
+    color: #d0d0d0;
+    padding: 4px 7px 3px 7px;
+    border: 1px solid #1f4f4d;
+    border-bottom: none;
+    min-width: 80px;
+}
+
 QTabBar::tab:first {
     border-radius: 0px;
     border-top-left-radius: 15px;
     border-right: none;
 
-    padding-right: 6px;
     padding-left: 7px;
+    padding-right: 6px;
 }
 
 QTabBar::tab:middle {
@@ -110,8 +118,8 @@ QTabBar::tab:middle {
     border-left: none;
     border-right: none;
 
-    padding-right: 6px;
     padding-left: 6px;
+    padding-right: 6px;
 }
 
 QTabBar::tab:only-one {
@@ -119,8 +127,8 @@ QTabBar::tab:only-one {
     border-left: none;
     border-right: none;
 
-    padding-right: 6px;
     padding-left: 6px;
+    padding-right: 6px;
 
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -131,19 +139,8 @@ QTabBar::tab:last {
     border-top-right-radius: 15px;
     border-left: none;
 
-    padding-right: 7px;
     padding-left: 6px;
-}
-
-QTabBar::tab {
-    background-color: #2d2d2d;
-    color: #d0d0d0;
-    margin-top: 4px;
-    padding-bottom: 3px;
-    padding-top: 4px;
-    border: 1px solid #1f4f4d;
-    border-bottom: none;
-    min-width: 80px;
+    padding-right: 7px;
 }
 
 QTabBar::tab:disabled {
@@ -153,18 +150,18 @@ QTabBar::tab:disabled {
 }
 
 QTabBar::tab:hover {
-    background-color: #2d2d2d;
+    background-color: #216862;
     border-color: #30605e;
     color: #bbb;
 }
 
 QTabBar::tab:selected:hover {
-    background-color: #1c1c1c;
+    background-color: #326861;
     border-color: #30605e;
 }
 
 QTabBar::tab:selected {
-    background-color: #0f1f1d;
+    background-color: #20433e;
     color: #e0e0e0;
     border: 1px solid;
     border-bottom: none;
@@ -185,7 +182,6 @@ QToolBox {
 }
 
 QToolBox::close-button {
-    image: url(:/images/icons/common/close_tab.svg);
     background: transparent;
     subcontrol-position: right;
     margin: 3px;
